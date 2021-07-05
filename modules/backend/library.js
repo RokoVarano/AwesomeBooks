@@ -17,8 +17,12 @@ export default class Library {
     const jbooks = JSON.stringify(this.books);
     localStorage.setItem('books', jbooks);
   }
+
   deleteBook = (book) => {
     const bookIndex = this.books.indexOf(book)
-    book.splice(bookIndex, 1)
+    this.books.splice(bookIndex, 1)
+
+    const jbooks = JSON.stringify(this.books);
+    localStorage.setItem('books', jbooks);
   }
 }

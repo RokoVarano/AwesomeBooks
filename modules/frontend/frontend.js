@@ -1,6 +1,6 @@
-const bookList = (books) => {
+const bookList = (library) => {
 
-  const addBook = (book) => {
+  const addBook = (book, library) => {
     const li = document.createElement('li');
     const pTitle = document.createElement('p');
     pTitle.textContent = book.title;
@@ -8,20 +8,24 @@ const bookList = (books) => {
     pAuthor.textContent = book.author;
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener('click', () => {
+      library.deleteBook(book);
+      li.style.display = 'none';
+    }
+    )
 
     li.appendChild(pTitle);
     li.appendChild(pAuthor);
+    li.appendChild(deleteBtn);
 
     return li;
   }
 
   const bookContainer = document.querySelector('.books-container');
 
-  books.forEach(book => bookContainer.appendChild(addBook(book)));
+  library.books.forEach(book => bookContainer.appendChild(addBook(book, library)));
 }
  
-deleteBtn.onclick = 
-
 const addBookForm = (library) => {
   const title = document.querySelector("#title");
   const author = document.querySelector("#author");

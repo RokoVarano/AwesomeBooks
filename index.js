@@ -5,7 +5,7 @@ import { bookList, addBookForm } from './modules/frontend/frontend.js';
 const run = () => {
   const library = new Library();
 
-  bookList(library.books);
+  bookList(library);
 
   addBookForm(library);
 }
