@@ -6,6 +6,8 @@ const bookList = (books) => {
     pTitle.textContent = book.title;
     const pAuthor = document.createElement('p');
     pAuthor.textContent = book.author;
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = "Delete";
 
     li.appendChild(pTitle);
     li.appendChild(pAuthor);
@@ -17,6 +19,8 @@ const bookList = (books) => {
 
   books.forEach(book => bookContainer.appendChild(addBook(book)));
 }
+ 
+deleteBtn.onclick = 
 
 const addBookForm = (library) => {
   const title = document.querySelector("#title");
