@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import Book from './book.js';
 
 export default class Library {
@@ -26,3 +28,5 @@ export default class Library {
     localStorage.setItem('books', jbooks);
   }
 }
+
+/* eslint-enable import/extensions */

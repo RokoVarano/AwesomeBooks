@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import Library from './modules/backend/library.js';
 import { bookList, addBookForm } from './modules/frontend/frontend.js';
 
@@ -10,3 +12,5 @@ const run = () => {
 };
 
 run();
+
+/* eslint-enable import/extensions */
