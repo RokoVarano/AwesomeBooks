@@ -4,7 +4,7 @@
 
 > Simple book library for Awesome Library Project
 
-![screenshot](./app_screenshot.png)
+![screenshot](./AwesomeLibrary.png)
 
 features:
 - Book list, each including title and author
