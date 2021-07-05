@@ -8,4 +8,8 @@ export default class Library {
   addBook = (title, author) => {
     this.books.push(new Book(title, author));
   }
+
+  addBooksToStorage = () => {
+    localStorage.setItem(this.books);
+  }
 }
