@@ -1,16 +1,13 @@
 import Book from './modules/backend/book.js';
 import Library from './modules/backend/library.js';
-import { bookList } from './modules/frontend/bookList.js';
-
-console.log('This is running!!');
+import { bookList, addBookForm } from './modules/frontend/frontend.js';
 
 const run = () => {
-  
-  const library = new Library([
-    new Book('Hansel-Gretel', 'Grim brothers')
-  ]); //load books from LocalStorage!
+  const library = new Library();
 
   bookList(library.books);
+
+  addBookForm(library);
 }
 
 run();

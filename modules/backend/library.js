@@ -1,15 +1,20 @@
 import Book from './book.js';
 
 export default class Library {
-  constructor(books){
-    this.books = books;
+  constructor(){
+    let books = []
+
+    if (localStorage.getItem('books')) {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+
+    this.books = books
   }
 
-  addBook = (title, author) => {
+  addBooksToStorage = (title, author)  => {
     this.books.push(new Book(title, author));
-  }
 
-  addBooksToStorage = () => {
-    localStorage.setItem(this.books);
+    const jbooks = JSON.stringify(this.books);
+    localStorage.setItem('books', jbooks);
   }
 }

@@ -1,4 +1,4 @@
-export const bookList = (books) => {
+const bookList = (books) => {
 
   const addBook = (book) => {
     const li = document.createElement('li');
@@ -17,3 +17,13 @@ export const bookList = (books) => {
 
   books.forEach(book => bookContainer.appendChild(addBook(book)));
 }
+
+const addBookForm = (library) => {
+  const title = document.querySelector("#title");
+  const author = document.querySelector("#author");
+  const addBookBtn = document.querySelector(".addBookBtn");
+
+  addBookBtn.addEventListener('click', () => library.addBooksToStorage(title.value, author.value));
+}
+
+export { bookList, addBookForm };
