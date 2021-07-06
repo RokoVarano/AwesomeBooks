@@ -6,7 +6,7 @@ $p-size: 1rem;
 $h-size: $p-size * 2;
 $primary-color: #d9d9d9;
 $secondary-color: white;
-$tertiary-color: black; 
+$tertiary-color: black;
 
 body,
 div,
@@ -31,7 +31,7 @@ input {
   margin: 0 auto;
   padding: 0;
   color: $tertiary-color;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -57,7 +57,7 @@ p {
 li {
   flex-direction: row;
   justify-content: space-between;
-  background: $secondary-color; 
+  background: $secondary-color;
 }
 
 li:nth-child(odd) { background: $primary-color; }
@@ -84,7 +84,7 @@ input {
   background-color: $secondary-color;
 }
 
-.books-container{
+.books-container {
   border: 2px black solid;
 }
 
