@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Encode+Sans+SC:wght@200&display=swap");
+body,
+div,
+section,
+h1,
+h3,
+p,
+article,
+main,
+nav,
+ul,
+li,
+footer,
+form,
+input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 40%;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Bona Nova", serif;
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: "Bona Nova", serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+}
+
+li:nth-child(odd) {
+  background: #d9d9d9;
+}
+
+button {
+  -webkit-box-shadow: 0.2rem 0.2rem;
+          box-shadow: 0.2rem 0.2rem;
+}
+
+form {
+  width: 60%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  margin-bottom: 0.4rem;
+}
+
+.primary {
+  background-color: #d9d9d9;
+}
+
+.secondary {
+  background-color: white;
+}
+
+.books-container {
+  border: 2px black solid;
+}
+
+.item-name {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.4rem;
+}
+
+.addBookBtn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-shadow: 0.2rem 0.2rem;
+          box-shadow: 0.2rem 0.2rem;
+}
+
+.deleteBookBtn {
+  margin-right: 0.4rem;
+}
+/*# sourceMappingURL=styles.css.map */
