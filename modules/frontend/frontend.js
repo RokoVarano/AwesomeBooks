@@ -3,11 +3,12 @@ const bookList = (library) => {
     const li = document.createElement('li');
     li.classList.add('secondary');
     const p = document.createElement('p');
-    p.classList.add('item-name')
+    p.classList.add('item-name');
     p.textContent = `${book.title} by ${book.author}`;
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('deleteBookBtn');
     deleteBtn.addEventListener('click', () => {
       library.deleteBook(book);
       li.style.display = 'none';

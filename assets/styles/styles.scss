@@ -19,17 +19,24 @@ main,
 nav,
 ul,
 li,
-footer {
+footer,
+form,
+input {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  border: 1px black solid;
   color: $tertiary-color;
+  box-sizing: border-box; 
+}
+
+body {
+  width: 40%;
+  border: 1px solid black;
 }
 
 h1 {
@@ -47,33 +54,50 @@ p {
   font-family: $p-font;
 }
 
-.primary {
-  background-color: $primary-color;
-  color: $secondary-color;
-}
-
-.secondary {
-  background-color: $secondary-color;
-  color: $primary-color;
-}
-.books-container{
-  border: 2px black solid;
-}
-
-ul {
-  width: 40%;
-  padding: 0.2rem;
-
-}
-
-.item-name {
-  align-items: flex-start;
-}
-
 li {
   flex-direction: row;
   justify-content: space-between;
   background: $secondary-color; 
-  }
+}
 
 li:nth-child(odd) { background: $primary-color; }
+
+button {
+  box-shadow: 0.2rem 0.2rem;
+}
+
+form {
+  width: 60%;
+  justify-content: start;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  margin-bottom: 0.4rem;
+}
+
+.primary {
+  background-color: $primary-color;
+}
+
+.secondary {
+  background-color: $secondary-color;
+}
+
+.books-container{
+  border: 2px black solid;
+}
+
+.item-name {
+  align-items: flex-start;
+  padding: 0.4rem;
+}
+
+.addBookBtn {
+  align-self: flex-end;
+  box-shadow: 0.2rem 0.2rem;
+}
+
+.deleteBookBtn {
+  margin-right: 0.4rem;
+}
