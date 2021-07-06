@@ -10,6 +10,7 @@ features:
 - Book list, each including title and author
 - Add Book Form
 - Delete Book button on each book
+- Used classes
 
 ## Built With
 
