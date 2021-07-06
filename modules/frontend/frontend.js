@@ -1,6 +1,7 @@
 const bookList = (library) => {
   const addBook = (book, library) => {
     const li = document.createElement('li');
+    li.classList.add('secondary')
     const pTitle = document.createElement('p');
     pTitle.textContent = book.title;
     const pAuthor = document.createElement('p');
