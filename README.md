@@ -14,6 +14,7 @@ features:
 ## Built With
 
 - Javascript
+- HTML5
 
 ## Live Demo
 
