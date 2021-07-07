@@ -146,4 +146,11 @@ nav {
 .deleteBookBtn {
   margin-right: 0.4rem;
 }
+
+.date-time {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0.4rem;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,11 @@
+import { DateTime } from '../libraries/luxon.js';
+
+const dateTime = () =>{
+  const dt = DateTime.now();
+  const dateTime  = document.querySelector('.date-time');
+  dateTime.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
+}
+
 const bookList = (library) => {
   const addBook = (book, library) => {
     const li = document.createElement('li');
@@ -33,4 +41,4 @@ const addBookForm = (library) => {
   addBookBtn.addEventListener('click', () => library.addBooksToStorage(title.value, author.value));
 };
 
-export { bookList, addBookForm };
+export { bookList, addBookForm, dateTime };
