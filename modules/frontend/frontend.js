@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import { DateTime } from '../libraries/luxon.js';
 
 const showHide = () => {
@@ -17,27 +19,26 @@ const showHide = () => {
     showBooks.style.display = 'flex';
     bookForm.style.display = 'none';
     contactInfo.style.display = 'none';
-  })
+  });
 
   navlink2.addEventListener('click', () => {
     showBooks.style.display = 'none';
     bookForm.style.display = 'flex';
     contactInfo.style.display = 'none';
-  })
+  });
 
   navlink3.addEventListener('click', () => {
     showBooks.style.display = 'none';
     bookForm.style.display = 'none';
     contactInfo.style.display = 'flex';
-  })
+  });
+};
 
-}
-
-const dateTime = () =>{
+const dateTime = () => {
   const dt = DateTime.now();
-  const dateTime  = document.querySelector('.date-time');
+  const dateTime = document.querySelector('.date-time');
   dateTime.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
-}
+};
 
 const bookList = (library) => {
   const addBook = (book, library) => {
@@ -74,4 +75,8 @@ const addBookForm = (library) => {
   addBookBtn.addEventListener('click', () => library.addBooksToStorage(title.value, author.value));
 };
 
-export { bookList, addBookForm, dateTime, showHide };
+export {
+  bookList, addBookForm, dateTime, showHide,
+};
+
+/* eslint-enable import/extensions */

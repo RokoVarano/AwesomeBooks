@@ -16,7 +16,6 @@ h3,
 p,
 article,
 main,
-nav,
 ul,
 li,
 footer,
@@ -107,6 +106,16 @@ nav {
   padding: 2rem;
 }
 
+.address {
+  padding-left: 2rem;
+
+  li {
+    display: list-item;
+  }
+
+  list-style-type: circle;
+}
+
 .books-container {
   border: 2px black solid;
   overflow-y: scroll;
@@ -117,11 +126,9 @@ nav {
     justify-content: space-between;
     background: $secondary-color;
   }
-  
+
   li:nth-child(odd) { background: $primary-color; }
-
 }
-
 
 .item-name {
   align-items: flex-start;
@@ -142,14 +149,6 @@ nav {
   padding: 0.4rem;
 }
 
-.address {
-  padding-left: 2rem;
-  li{
-    display: list-item;
-    };
-  list-style-type: circle;
-}
-
 .contact-container {
   max-width: 70%;
 }
@@ -165,9 +164,8 @@ footer {
   position: absolute;
   bottom: 0;
 
-  h3{
+  h3 {
     flex-direction: row;
     justify-content: start;
   }
-
 }

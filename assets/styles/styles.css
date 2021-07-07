@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Encode+Sans+SC:wght@200&display=swap");
+
 html,
 body,
 div,
@@ -8,7 +9,6 @@ h3,
 p,
 article,
 main,
-nav,
 ul,
 li,
 footer,
@@ -17,24 +17,23 @@ input,
 nav,
 .navlinks {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   color: black;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Bona Nova", serif;
 }
 
@@ -48,15 +47,15 @@ body {
   width: 40%;
   border: 1px solid black;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   position: relative;
 }
 
 section {
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 h1 {
@@ -73,14 +72,14 @@ p {
 
 button {
   -webkit-box-shadow: 0.2rem 0.2rem;
-          box-shadow: 0.2rem 0.2rem;
+  box-shadow: 0.2rem 0.2rem;
 }
 
 form {
   width: 60%;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   margin-bottom: 0.4rem;
 }
 
@@ -91,12 +90,12 @@ input {
 nav {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   border: 1px black solid;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0.4rem;
 }
 
@@ -110,22 +109,31 @@ nav {
 
 .navtitle {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .navlinks {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .book-form {
   padding: 2rem;
+}
+
+.address {
+  padding-left: 2rem;
+  list-style-type: circle;
+}
+
+.address li {
+  display: list-item;
 }
 
 .books-container {
@@ -137,11 +145,11 @@ nav {
 .books-container li {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: white;
 }
 
@@ -151,16 +159,16 @@ nav {
 
 .item-name {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 0.4rem;
 }
 
 .addBookBtn {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   -webkit-box-shadow: 0.2rem 0.2rem;
-          box-shadow: 0.2rem 0.2rem;
+  box-shadow: 0.2rem 0.2rem;
 }
 
 .deleteBookBtn {
@@ -169,18 +177,9 @@ nav {
 
 .date-time {
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   padding: 0.4rem;
-}
-
-.address {
-  padding-left: 2rem;
-  list-style-type: circle;
-}
-
-.address li {
-  display: list-item;
 }
 
 .contact-container {
@@ -202,10 +201,9 @@ footer {
 footer h3 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
-/*# sourceMappingURL=styles.css.map */
