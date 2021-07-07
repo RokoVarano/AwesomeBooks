@@ -1,1 +1,103 @@
-$main-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Encode+Sans+SC:wght@200&display=swap');
+
+$p-font: 'Encode Sans SC', sans-serif;
+$h-font: 'Bona Nova', serif;
+$p-size: 1rem;
+$h-size: $p-size * 2;
+$primary-color: #d9d9d9;
+$secondary-color: white;
+$tertiary-color: black;
+
+body,
+div,
+section,
+h1,
+h3,
+p,
+article,
+main,
+nav,
+ul,
+li,
+footer,
+form,
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  color: $tertiary-color;
+  box-sizing: border-box;
+}
+
+body {
+  width: 40%;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: $h-size;
+  font-family: $h-font;
+}
+
+h3 {
+  font-size: $h-size / 2;
+  font-family: $h-font;
+}
+
+p {
+  font-size: $p-size;
+  font-family: $p-font;
+}
+
+li {
+  flex-direction: row;
+  justify-content: space-between;
+  background: $secondary-color;
+}
+
+li:nth-child(odd) { background: $primary-color; }
+
+button {
+  box-shadow: 0.2rem 0.2rem;
+}
+
+form {
+  width: 60%;
+  justify-content: start;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  margin-bottom: 0.4rem;
+}
+
+.primary {
+  background-color: $primary-color;
+}
+
+.secondary {
+  background-color: $secondary-color;
+}
+
+.books-container {
+  border: 2px black solid;
+}
+
+.item-name {
+  align-items: flex-start;
+  padding: 0.4rem;
+}
+
+.addBookBtn {
+  align-self: flex-end;
+  box-shadow: 0.2rem 0.2rem;
+}
+
+.deleteBookBtn {
+  margin-right: 0.4rem;
+}

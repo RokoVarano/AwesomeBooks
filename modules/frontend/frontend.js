@@ -1,19 +1,20 @@
 const bookList = (library) => {
   const addBook = (book, library) => {
     const li = document.createElement('li');
-    const pTitle = document.createElement('p');
-    pTitle.textContent = book.title;
-    const pAuthor = document.createElement('p');
-    pAuthor.textContent = book.author;
+    li.classList.add('secondary');
+    const p = document.createElement('p');
+    p.classList.add('item-name');
+    p.textContent = `${book.title} by ${book.author}`;
+
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('deleteBookBtn');
     deleteBtn.addEventListener('click', () => {
       library.deleteBook(book);
       li.style.display = 'none';
     });
 
-    li.appendChild(pTitle);
-    li.appendChild(pAuthor);
+    li.appendChild(p);
     li.appendChild(deleteBtn);
 
     return li;
