@@ -54,22 +54,7 @@ h3 {
 
 p {
   font-size: 1rem;
-  font-family: "Encode Sans SC", sans-serif;
-}
-
-li {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: white;
-}
-
-li:nth-child(odd) {
-  background: #d9d9d9;
+  font-family: "Bona Nova", serif;
 }
 
 button {
@@ -129,6 +114,21 @@ nav {
   border: 2px black solid;
 }
 
+.books-container li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+}
+
+.books-container li:nth-child(odd) {
+  background: #d9d9d9;
+}
+
 .item-name {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -152,5 +152,30 @@ nav {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 0.4rem;
+}
+
+.address {
+  padding-left: 2rem;
+  list-style-type: circle;
+}
+
+.address li {
+  display: list-item;
+}
+
+.contact-information {
+  padding: 2rem;
+}
+
+footer h3 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

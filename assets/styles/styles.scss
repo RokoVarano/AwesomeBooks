@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Encode+Sans+SC:wght@200&display=swap');
 
-$p-font: 'Encode Sans SC', sans-serif;
+$p-font: 'Bona Nova', serif;
 $h-font: 'Bona Nova', serif;
 $p-size: 1rem;
 $h-size: $p-size * 2;
@@ -56,13 +56,7 @@ p {
   font-family: $p-font;
 }
 
-li {
-  flex-direction: row;
-  justify-content: space-between;
-  background: $secondary-color;
-}
 
-li:nth-child(odd) { background: $primary-color; }
 
 button {
   box-shadow: 0.2rem 0.2rem;
@@ -104,6 +98,14 @@ nav {
 
 .books-container {
   border: 2px black solid;
+  li {
+    flex-direction: row;
+    justify-content: space-between;
+    background: $secondary-color;
+  }
+  
+  li:nth-child(odd) { background: $primary-color; }
+
 }
 
 .item-name {
@@ -125,3 +127,24 @@ nav {
   padding: 0.4rem;
 }
 
+.address {
+  padding-left: 2rem;
+  li{
+    display: list-item;
+    };
+  list-style-type: circle;
+}
+
+.contact-information {
+  padding: 2rem;
+}
+
+footer {
+  h3{
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}
