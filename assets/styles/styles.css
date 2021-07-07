@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Encode+Sans+SC:wght@200&display=swap");
+html,
 body,
 div,
 section,
@@ -29,32 +30,45 @@ nav,
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
   padding: 0;
   color: black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Bona Nova", serif;
+}
+
+html {
+  height: 100%;
+  padding: 2rem 0;
 }
 
 body {
+  height: 100%;
   width: 40%;
   border: 1px solid black;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+section {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 h1 {
   font-size: 2rem;
-  font-family: "Bona Nova", serif;
 }
 
 h3 {
   font-size: 1rem;
-  font-family: "Bona Nova", serif;
 }
 
 p {
   font-size: 1rem;
-  font-family: "Bona Nova", serif;
 }
 
 button {
@@ -110,8 +124,14 @@ nav {
           align-items: flex-end;
 }
 
+.book-form {
+  padding: 2rem;
+}
+
 .books-container {
   border: 2px black solid;
+  overflow-y: scroll;
+  max-height: 500px;
 }
 
 .books-container li {
@@ -163,8 +183,20 @@ nav {
   display: list-item;
 }
 
+.contact-container {
+  max-width: 70%;
+}
+
 .contact-information {
   padding: 2rem;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 0.4rem;
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
 }
 
 footer h3 {
@@ -175,7 +207,5 @@ footer h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
