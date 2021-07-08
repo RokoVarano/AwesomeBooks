@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Encode+Sans+SC:wght@200&display=swap');
 
-$p-font: 'Encode Sans SC', sans-serif;
 $h-font: 'Bona Nova', serif;
 $p-size: 1rem;
 $h-size: $p-size * 2;
@@ -8,6 +7,7 @@ $primary-color: #d9d9d9;
 $secondary-color: white;
 $tertiary-color: black;
 
+html,
 body,
 div,
 section,
@@ -16,51 +16,53 @@ h3,
 p,
 article,
 main,
-nav,
 ul,
 li,
 footer,
 form,
-input {
+input,
+nav,
+.navlinks {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
   padding: 0;
   color: $tertiary-color;
   box-sizing: border-box;
+  font-family: $h-font;
+}
+
+html {
+  height: 100%;
+  padding: 2rem 0;
 }
 
 body {
+  height: 100%;
   width: 40%;
   border: 1px solid black;
+  justify-content: flex-start;
+  position: relative;
+}
+
+section {
+  justify-content: flex-start;
 }
 
 h1 {
   font-size: $h-size;
-  font-family: $h-font;
 }
 
 h3 {
   font-size: $h-size / 2;
-  font-family: $h-font;
 }
 
 p {
   font-size: $p-size;
-  font-family: $p-font;
 }
-
-li {
-  flex-direction: row;
-  justify-content: space-between;
-  background: $secondary-color;
-}
-
-li:nth-child(odd) { background: $primary-color; }
 
 button {
   box-shadow: 0.2rem 0.2rem;
@@ -76,6 +78,13 @@ input {
   margin-bottom: 0.4rem;
 }
 
+nav {
+  flex-direction: row;
+  border: 1px black solid;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+
 .primary {
   background-color: $primary-color;
 }
@@ -84,8 +93,41 @@ input {
   background-color: $secondary-color;
 }
 
+.navtitle {
+  align-items: flex-start;
+}
+
+.navlinks {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.book-form {
+  padding: 2rem;
+}
+
+.address {
+  padding-left: 2rem;
+
+  li {
+    display: list-item;
+  }
+
+  list-style-type: circle;
+}
+
 .books-container {
   border: 2px black solid;
+  overflow-y: scroll;
+  max-height: 500px;
+
+  li {
+    flex-direction: row;
+    justify-content: space-between;
+    background: $secondary-color;
+  }
+
+  li:nth-child(odd) { background: $primary-color; }
 }
 
 .item-name {
@@ -100,4 +142,30 @@ input {
 
 .deleteBookBtn {
   margin-right: 0.4rem;
+}
+
+.date-time {
+  align-items: flex-end;
+  padding: 0.4rem;
+}
+
+.contact-container {
+  max-width: 70%;
+}
+
+.contact-information {
+  padding: 2rem;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 0.4rem;
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+
+  h3 {
+    flex-direction: row;
+    justify-content: start;
+  }
 }

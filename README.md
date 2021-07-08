@@ -4,13 +4,12 @@
 
 > Simple book library for Awesome Library Project
 
-![screenshot](./AwesomeLibrary.png)
+![screenshot](./AwesomeBooks.png)
 
 features:
 - Book list, each including title and author
 - Add Book Form
 - Delete Book button on each book
-- Used classes
 
 ## Built With
 
@@ -33,8 +32,9 @@ clone the following repo link, https://github.com/RokoVarano/AwesomeBooks.git
 
 ### Usage
 
-- run index.html in your favorite browser
-- use the 'Add Book' button to add a book with the form values
+- run index.html in your favorite browser.
+- click on the navbar links to access each section.
+- use the 'Add Book' button to add a book with the form values.
 - use the 'Delete Book' button to remove it from the list.
 
 ## Authors

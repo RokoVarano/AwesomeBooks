@@ -7,17 +7,51 @@
   <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
-  <h1>Awesome Books</h1>
-  <ul class="books-container">
+  <nav class='navbar'>
+    <h3 class='navtitle'>Awesome Books</h3>
+    <div class="navlinks">
+      <p class="navlink" id='navlink1'>List</p>
+      <p class="navlink" id='navlink2'>Add new</p>
+      <p class="navlink" id='navlink3'>Contact</p>
+    </div>
+  </nav>
+  <h3 class="date-time"></h3>
 
-  </ul>
-  <form action="" class="add-books">
-  <h3>Add New Book</h3>
-  <input type="text" id="title" name="title" placeholder="Title">
-  <input type="text" id="author" name="author" placeholder="Author">
-  <button class="addBookBtn">addBook</button>
-  </form>
+  <section class="show-books">
+    <h1>All awesome Books</h1>
+    <ul class="books-container">
+  
+    </ul>
+  </section>
 
+  <section class="book-form">
+    <form action="" class="add-books">
+      <h1>Add New Book</h1>
+      <input type="text" id="title" name="title" placeholder="Title">
+      <input type="text" id="author" name="author" placeholder="Author">
+      <button class="addBookBtn">addBook</button>
+      </form>
+  </section>
+
+  <section class="contact-information">
+    <h1 class="contact-info"> Contaction information</h1>
+    <div class="contact-container">
+      <p>
+        Do you have any questions or you just want to say "Hello"? 
+        You can reach out to us!
+      </p>
+      <ul class="address">
+        <li>Our e-mail: mail@email.com</li>
+        <li> Our phone number: 000 1111 2222 3333</li>
+        <li> Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <h3 class="copyright">Copyright</h3>
+  </footer>
+  
 <script type="module" src="index.js"></script>
 </body>
 </html>
